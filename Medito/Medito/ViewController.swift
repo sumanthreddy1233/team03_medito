@@ -75,5 +75,54 @@ class ViewController: UIViewController {
     }
     
     
+    override func viewWillAppear(_ animated: Bool) {
+        let formatter = DateComponentsFormatter()
+        formatter.allowedUnits = [.minute, .second]
+        formatter.unitsStyle = .full
+        
+        self.minTimeLbl.text = formatter.string(from: player.currentTime)!
+    }
+    
+    override var canBecomeFirstResponder: Bool{
+        return true
+    }
+    
+    func pauseAudio(){
+        player.pause()
+    }
+    
+    func playAudio(){
+        player.play()
+    }
+    
+    func setSession(){
+        do{
+            try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default)
+            try AVAudioSession.sharedInstance().setActive(true)
+        }catch{
+            print(error)
+        }
+    }
+    
+   @objc func updateTimeSlider(){
+    self.timeSlider.value = Float(player.currentTime)
+    let formatter = DateComponentsFormatter()
+    formatter.allowedUnits = [.hour, .minute, .second]
+    formatter.unitsStyle = .positional
+    
+     let formattedString = formatter.string(from: player.currentTime)!
+        self.minTimeLbl.text = formattedString
+    }
+    
+    @IBAction func changePlayerVolume(_ sender: Any) {
+        self.player.volume = volumeSlider.value
+    }
+    
+    func secondsToHoursMinutesSeconds (seconds : Double) -> (Double, Double, Double) {
+        let (hr,  minf) = modf (seconds / 3600)
+        let (min, secf) = modf (60 * minf)
+        return (hr, min, 60 * secf)
+    }
+    
 }
 
