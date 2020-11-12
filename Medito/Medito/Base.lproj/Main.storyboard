@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -19,7 +16,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lxb-em-epq">
-                                <rect key="frame" x="167" y="433" width="51" height="51"/>
+                                <rect key="frame" x="176.5" y="424.5" width="32" height="48"/>
                                 <state key="normal" image="play-button">
                                     <color key="titleColor" red="1" green="0.54731170969999998" blue="0.1834322028" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -28,27 +25,27 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1ha-Ii-RUG">
-                                <rect key="frame" x="27" y="45" width="24" height="24"/>
+                                <rect key="frame" x="27" y="25" width="16" height="22"/>
                                 <state key="normal" image="left-arrow"/>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Songs" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F8Z-Mk-Te9">
-                                <rect key="frame" x="159" y="45" width="57" height="21"/>
+                                <rect key="frame" x="159" y="25" width="57" height="27.5"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cmt-HD-E3b">
-                                <rect key="frame" x="334" y="45" width="15" height="25"/>
+                                <rect key="frame" x="334" y="25" width="15" height="22"/>
                                 <state key="normal" image="dots"/>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sunflower" translatesAutoresizingMaskIntoConstraints="NO" id="udr-Xk-t8T">
-                                <rect key="frame" x="75" y="122" width="225" height="221"/>
+                                <rect key="frame" x="129.5" y="108.5" width="116.5" height="112.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="udr-Xk-t8T" secondAttribute="height" multiplier="1:1" constant="4" id="qq3-g8-9yc"/>
                                 </constraints>
                             </imageView>
                             <slider opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="5" translatesAutoresizingMaskIntoConstraints="NO" id="1JJ-fc-OZI">
-                                <rect key="frame" x="34" y="396" width="317" height="1"/>
+                                <rect key="frame" x="34" y="274" width="317" height="81.5"/>
                                 <color key="tintColor" red="0.92941176470588238" green="0.25882352941176467" blue="0.3411764705882353" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="thumbTintColor" red="0.92941176469999998" green="0.25882352939999997" blue="0.3411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
@@ -80,7 +77,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wSt-bK-IJu">
-                                <rect key="frame" x="271" y="446" width="27" height="25"/>
+                                <rect key="frame" x="261.5" y="437.5" width="27" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="27" id="AJO-zE-8YH"/>
                                     <constraint firstAttribute="height" constant="25" id="ZZX-bo-3J5"/>
@@ -88,7 +85,7 @@
                                 <state key="normal" image="fast-forward"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="upL-Hg-Wgo">
-                                <rect key="frame" x="87" y="446" width="27" height="25"/>
+                                <rect key="frame" x="87" y="437.5" width="36.5" height="22"/>
                                 <state key="normal" image="rewind"/>
                             </button>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="0.0" translatesAutoresizingMaskIntoConstraints="NO" id="Evq-r2-oe9">
@@ -114,6 +111,7 @@
                                 </constraints>
                             </imageView>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="6LD-dX-Wbz" firstAttribute="leading" secondItem="cmt-HD-E3b" secondAttribute="leading" id="1Yq-9Z-waR"/>
@@ -155,15 +153,14 @@
                             <constraint firstItem="Lxb-em-epq" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" constant="115" id="uMU-I0-BfK"/>
                             <constraint firstItem="1ha-Ii-RUG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="25" id="yML-AE-u4g"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="coverImg" destination="udr-Xk-t8T" id="w6u-7Z-RCr"/>
-                        <outlet property="maxTimeLbl" destination="TIQ-ri-fjv" id="rqs-aB-3hA"/>
-                        <outlet property="minTimeLbl" destination="W9O-9N-Hc9" id="Ou2-9C-9X2"/>
-                        <outlet property="playBtn" destination="Lxb-em-epq" id="13E-Lf-G4k"/>
-                        <outlet property="timeSlider" destination="1JJ-fc-OZI" id="IeD-aE-qTN"/>
-                        <outlet property="volumeSlider" destination="Evq-r2-oe9" id="dIq-20-mKd"/>
+                        <outlet property="coverImg" destination="udr-Xk-t8T" id="vpH-qv-yNF"/>
+                        <outlet property="maxTimeLbl" destination="TIQ-ri-fjv" id="Ec4-Pb-yEg"/>
+                        <outlet property="minTimeLbl" destination="Uu3-4P-BSV" id="jvu-qo-dkh"/>
+                        <outlet property="playBtn" destination="Lxb-em-epq" id="b7m-Gu-5c4"/>
+                        <outlet property="timeSlider" destination="1JJ-fc-OZI" id="IuE-nZ-Wad"/>
+                        <outlet property="volumeSlider" destination="Evq-r2-oe9" id="x4K-EM-UeT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -172,13 +169,13 @@
         </scene>
     </scenes>
     <resources>
-        <image name="dots" width="25.600000381469727" height="25.600000381469727"/>
-        <image name="fast-forward" width="25.600000381469727" height="25.600000381469727"/>
-        <image name="left-arrow" width="24" height="24"/>
-        <image name="play-button" width="51.200000762939453" height="51.200000762939453"/>
-        <image name="reduced-volume" width="12" height="12"/>
-        <image name="rewind" width="25.600000381469727" height="25.600000381469727"/>
-        <image name="sunflower" width="225" height="225"/>
-        <image name="volume-off" width="19.200000762939453" height="19.200000762939453"/>
+        <image name="dots" width="16" height="16"/>
+        <image name="fast-forward" width="16" height="16"/>
+        <image name="left-arrow" width="16" height="16"/>
+        <image name="play-button" width="32" height="32"/>
+        <image name="reduced-volume" width="8" height="8"/>
+        <image name="rewind" width="16" height="16"/>
+        <image name="sunflower" width="112.5" height="112.5"/>
+        <image name="volume-off" width="12" height="12"/>
     </resources>
 </document>
