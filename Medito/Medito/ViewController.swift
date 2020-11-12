@@ -6,20 +6,21 @@
 //
 
 import UIKit
+import AVFoundation
+import MediaPlayer
 
 class ViewController: UIViewController {
+    
+    var player:AVAudioPlayer = AVAudioPlayer()
 
+    @IBOutlet weak var minTimeLbl: UILabel!
     @IBOutlet weak var volumeSlider: UISlider!
     @IBOutlet weak var timeSlider: UISlider!
     @IBOutlet weak var playBtn: UIButton!
     @IBOutlet weak var coverImg: UIImageView!
-    @IBOutlet weak var minTimeLbl: NSLayoutConstraint!
-    @IBOutlet weak var maxTimeLbl: UILabel!
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
-    }
     
+    @IBOutlet weak var maxTimeLbl: UILabel!
+  
     var status = 0
 
     @IBAction func play(_ sender: Any) {
@@ -124,5 +125,13 @@ class ViewController: UIViewController {
         return (hr, min, 60 * secf)
     }
     
+    @IBAction func changeAudioTime(_ sender: Any) {
+        self.status = 1
+        self.playBtn.setImage(UIImage(named: "rounded-pause-button.png"), for: .normal)
+        player.stop()
+        player.currentTime = TimeInterval(timeSlider.value)
+        player.prepareToPlay()
+        player.play()
+    }
 }
 

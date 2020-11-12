@@ -22,7 +22,6 @@
                                 </state>
                                 <connections>
                                     <action selector="play:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2bh-0m-F6O"/>
-                                    <action selector="playBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="crc-cR-bhS"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1ha-Ii-RUG">
@@ -50,7 +49,7 @@
                                 <color key="tintColor" red="0.92941176470588238" green="0.25882352941176467" blue="0.3411764705882353" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="thumbTintColor" red="0.92941176469999998" green="0.25882352939999997" blue="0.3411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
-                                    <action selector="changeAudioTime:" destination="BYZ-38-t0r" eventType="valueChanged" id="aQD-Ar-yNH"/>
+                                    <action selector="changeAudioTime:" destination="BYZ-38-t0r" eventType="valueChanged" id="RUt-hv-Axr"/>
                                 </connections>
                             </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="1:38" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W9O-9N-Hc9">
@@ -158,7 +157,7 @@
                     <connections>
                         <outlet property="coverImg" destination="udr-Xk-t8T" id="vpH-qv-yNF"/>
                         <outlet property="maxTimeLbl" destination="TIQ-ri-fjv" id="Ec4-Pb-yEg"/>
-                        <outlet property="minTimeLbl" destination="Uu3-4P-BSV" id="jvu-qo-dkh"/>
+                        <outlet property="minTimeLbl" destination="W9O-9N-Hc9" id="HLh-zn-afw"/>
                         <outlet property="playBtn" destination="Lxb-em-epq" id="b7m-Gu-5c4"/>
                         <outlet property="timeSlider" destination="1JJ-fc-OZI" id="IuE-nZ-Wad"/>
                         <outlet property="volumeSlider" destination="Evq-r2-oe9" id="x4K-EM-UeT"/>
