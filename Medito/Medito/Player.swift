@@ -25,7 +25,7 @@ class Player{
     }
     
     func setPlayingScreen(fileUrl: String){
-        let urlArray = fileUrl.characters.split{
+        let urlArray = fileUrl.split{
             $0 == "/"
         }.map(String.init)
         let name = urlArray[urlArray.endIndex - 1]
