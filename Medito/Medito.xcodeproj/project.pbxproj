@@ -17,6 +17,8 @@
 		3F58C1CB255CEEB50027F128 /* song.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3F58C1CA255CEEB50027F128 /* song.mp3 */; };
 		3F58C1CE255CF7AD0027F128 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F58C1CD255CF7AD0027F128 /* TableViewCell.swift */; };
 		3F58C1D225635D120027F128 /* playlistTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F58C1D125635D120027F128 /* playlistTableViewController.swift */; };
+		3F58C1D52563897E0027F128 /* historyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F58C1D42563897E0027F128 /* historyTableViewController.swift */; };
+		3F58C1D825638A3F0027F128 /* historyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F58C1D725638A3F0027F128 /* historyTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		3F58C1CA255CEEB50027F128 /* song.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = song.mp3; sourceTree = "<group>"; };
 		3F58C1CD255CF7AD0027F128 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		3F58C1D125635D120027F128 /* playlistTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = playlistTableViewController.swift; sourceTree = "<group>"; };
+		3F58C1D42563897E0027F128 /* historyTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = historyTableViewController.swift; sourceTree = "<group>"; };
+		3F58C1D725638A3F0027F128 /* historyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = historyTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +74,8 @@
 				3F58C1B3255CCF1C0027F128 /* ViewController.swift */,
 				3F58C1C7255CD7760027F128 /* Player.swift */,
 				3F58C1B5255CCF1C0027F128 /* Main.storyboard */,
+				3F58C1D42563897E0027F128 /* historyTableViewController.swift */,
+				3F58C1D725638A3F0027F128 /* historyTableViewCell.swift */,
 				3F58C1D125635D120027F128 /* playlistTableViewController.swift */,
 				3F58C1CD255CF7AD0027F128 /* TableViewCell.swift */,
 				3F58C1B8255CCF200027F128 /* Assets.xcassets */,
@@ -152,6 +158,8 @@
 			files = (
 				3F58C1CE255CF7AD0027F128 /* TableViewCell.swift in Sources */,
 				3F58C1D225635D120027F128 /* playlistTableViewController.swift in Sources */,
+				3F58C1D825638A3F0027F128 /* historyTableViewCell.swift in Sources */,
+				3F58C1D52563897E0027F128 /* historyTableViewController.swift in Sources */,
 				3F58C1C8255CD7760027F128 /* Player.swift in Sources */,
 				3F58C1B4255CCF1C0027F128 /* ViewController.swift in Sources */,
 				3F58C1B0255CCF1C0027F128 /* AppDelegate.swift in Sources */,
