@@ -22,6 +22,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var maxTimeLbl: UILabel!
   
     var status = 0
+    var audioName: String = ""
 
     @IBAction func play(_ sender: Any) {
         if(status == 0){
@@ -34,6 +35,8 @@ class ViewController: UIViewController {
                self.playBtn.setImage(UIImage(named: "play-button.png"), for: .normal)
         }
     }
+    
+    
     
     
     override func viewDidLoad() {
@@ -54,7 +57,7 @@ class ViewController: UIViewController {
         UIApplication.shared.beginReceivingRemoteControlEvents()
         becomeFirstResponder()
         do {
-            let audioPath = Bundle.main.path(forResource: "song", ofType: "mp3")
+            let audioPath = Bundle.main.path(forResource: audioName, ofType: "mp3")
             try
                 player = AVAudioPlayer(contentsOf: NSURL(fileURLWithPath: audioPath!) as URL)
         
@@ -77,6 +80,7 @@ class ViewController: UIViewController {
     
     
     override func viewWillAppear(_ animated: Bool) {
+        
         let formatter = DateComponentsFormatter()
         formatter.allowedUnits = [.minute, .second]
         formatter.unitsStyle = .full

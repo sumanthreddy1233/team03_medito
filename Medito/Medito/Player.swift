@@ -15,6 +15,8 @@ class Player{
         avPlayer = AVPlayer()
     }
     
+    let audios:[String] = ["song","song","song"]
+    
     func playStream(fileUrl: String){
         let url = NSURL(string: fileUrl)
         
