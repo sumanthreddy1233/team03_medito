@@ -17,8 +17,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var volumeSlider: UISlider!
     @IBOutlet weak var timeSlider: UISlider!
     @IBOutlet weak var playBtn: UIButton!
+   
     @IBOutlet weak var coverImg: UIImageView!
-    
+    var image = UIImage()
     @IBOutlet weak var maxTimeLbl: UILabel!
   
     var status = 0
@@ -43,6 +44,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         setSession()
+        
+        self.coverImg.image = self.image
         
          coverImg.layer.shadowColor = UIColor.gray.cgColor
          coverImg.layer.shadowOpacity = 2.0

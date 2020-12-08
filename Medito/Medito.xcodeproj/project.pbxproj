@@ -19,6 +19,7 @@
 		3F58C1D225635D120027F128 /* playlistTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F58C1D125635D120027F128 /* playlistTableViewController.swift */; };
 		3F58C1D52563897E0027F128 /* historyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F58C1D42563897E0027F128 /* historyTableViewController.swift */; };
 		3F58C1D825638A3F0027F128 /* historyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F58C1D725638A3F0027F128 /* historyTableViewCell.swift */; };
+		47B805EC257F154000D99DDA /* song1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 47B805EB257F154000D99DDA /* song1.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		3F58C1D125635D120027F128 /* playlistTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = playlistTableViewController.swift; sourceTree = "<group>"; };
 		3F58C1D42563897E0027F128 /* historyTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = historyTableViewController.swift; sourceTree = "<group>"; };
 		3F58C1D725638A3F0027F128 /* historyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = historyTableViewCell.swift; sourceTree = "<group>"; };
+		47B805EB257F154000D99DDA /* song1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = song1.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 			isa = PBXGroup;
 			children = (
 				3F58C1CA255CEEB50027F128 /* song.mp3 */,
+				47B805EB257F154000D99DDA /* song1.mp3 */,
 				3F58C1AF255CCF1C0027F128 /* AppDelegate.swift */,
 				3F58C1B1255CCF1C0027F128 /* SceneDelegate.swift */,
 				3F58C1B3255CCF1C0027F128 /* ViewController.swift */,
@@ -143,6 +146,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F58C1BC255CCF200027F128 /* LaunchScreen.storyboard in Resources */,
+				47B805EC257F154000D99DDA /* song1.mp3 in Resources */,
 				3F58C1CB255CEEB50027F128 /* song.mp3 in Resources */,
 				3F58C1B9255CCF200027F128 /* Assets.xcassets in Resources */,
 				3F58C1B7255CCF1C0027F128 /* Main.storyboard in Resources */,

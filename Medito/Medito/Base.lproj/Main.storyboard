@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gHn-9V-kje">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gHn-9V-kje">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -90,6 +90,7 @@
                     <navigationItem key="navigationItem" title="Playlist" id="jG6-Bf-MrR"/>
                     <connections>
                         <outlet property="playlist" destination="pZh-D4-S9l" id="AMb-CC-8C1"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="SendDataSegue" id="2Vi-F4-93a"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gNF-lJ-kfE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -105,7 +106,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lxb-em-epq">
-                                <rect key="frame" x="176.5" y="400" width="32" height="48"/>
+                                <rect key="frame" x="176.5" y="422" width="32" height="48"/>
                                 <state key="normal" image="play-button">
                                     <color key="titleColor" red="1" green="0.54731170969999998" blue="0.1834322028" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -114,27 +115,27 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1ha-Ii-RUG">
-                                <rect key="frame" x="27" y="25" width="16" height="22"/>
+                                <rect key="frame" x="27" y="69" width="16" height="22"/>
                                 <state key="normal" image="left-arrow"/>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Songs" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F8Z-Mk-Te9">
-                                <rect key="frame" x="159" y="25" width="57" height="27.5"/>
+                                <rect key="frame" x="159" y="69" width="57" height="27.5"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cmt-HD-E3b">
-                                <rect key="frame" x="334" y="25" width="15" height="22"/>
+                                <rect key="frame" x="334" y="69" width="15" height="22"/>
                                 <state key="normal" image="dots"/>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sunflower" translatesAutoresizingMaskIntoConstraints="NO" id="udr-Xk-t8T">
-                                <rect key="frame" x="129.5" y="108.5" width="116.5" height="112.5"/>
+                                <rect key="frame" x="129.5" y="152.5" width="116.5" height="112.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="udr-Xk-t8T" secondAttribute="height" multiplier="1:1" constant="4" id="qq3-g8-9yc"/>
                                 </constraints>
                             </imageView>
                             <slider opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="5" translatesAutoresizingMaskIntoConstraints="NO" id="1JJ-fc-OZI">
-                                <rect key="frame" x="34" y="274" width="317" height="57"/>
+                                <rect key="frame" x="34" y="318" width="317" height="35"/>
                                 <color key="tintColor" red="0.92941176470588238" green="0.25882352941176467" blue="0.3411764705882353" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="thumbTintColor" red="0.92941176469999998" green="0.25882352939999997" blue="0.3411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
@@ -167,7 +168,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wSt-bK-IJu">
-                                <rect key="frame" x="261.5" y="413" width="27" height="25"/>
+                                <rect key="frame" x="261.5" y="435" width="27" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="27" id="AJO-zE-8YH"/>
                                     <constraint firstAttribute="height" constant="25" id="ZZX-bo-3J5"/>
@@ -175,7 +176,7 @@
                                 <state key="normal" image="fast-forward"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="upL-Hg-Wgo">
-                                <rect key="frame" x="87" y="413" width="36.5" height="22"/>
+                                <rect key="frame" x="87" y="435" width="36.5" height="22"/>
                                 <state key="normal" image="rewind"/>
                             </button>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="0.0" translatesAutoresizingMaskIntoConstraints="NO" id="Evq-r2-oe9">
@@ -243,8 +244,9 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Player" image="play-button" selectedImage="play-button" id="2zY-0A-ZBs"/>
+                    <navigationItem key="navigationItem" id="GGh-Kr-SzO"/>
                     <connections>
-                        <outlet property="coverImg" destination="udr-Xk-t8T" id="vpH-qv-yNF"/>
+                        <outlet property="coverImg" destination="udr-Xk-t8T" id="UDI-73-iKb"/>
                         <outlet property="maxTimeLbl" destination="TIQ-ri-fjv" id="Ec4-Pb-yEg"/>
                         <outlet property="minTimeLbl" destination="W9O-9N-Hc9" id="HLh-zn-afw"/>
                         <outlet property="playBtn" destination="Lxb-em-epq" id="b7m-Gu-5c4"/>
@@ -378,6 +380,9 @@
             <point key="canvasLocation" x="2095.1999999999998" y="-39.130434782608695"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="2Vi-F4-93a"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="dots" width="16" height="16"/>
         <image name="fast-forward" width="16" height="16"/>
