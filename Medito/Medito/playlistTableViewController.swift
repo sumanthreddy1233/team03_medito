@@ -9,9 +9,9 @@ import UIKit
 class playlistTableViewController: UITableViewController {
 
     @IBOutlet var playlist: UITableView!
-    var list = ["Workout", "Swimming", "Meditation", "yoga", "Driving"]
-    var imgList = ["sunflower", "Dumbell", "Meditation", "sunflower", "Dumbell"]
-    var songs = ["song", "song1", "song", "song", "song"]
+    var list = ["Swimming", "Workout", "Meditation", "yoga", "Driving"]
+    var imgList = ["swimming", "Dumbell", "meditation", "yoga", "sunflower"]
+    var songs = ["no", "song1", "song", "years", "box"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
