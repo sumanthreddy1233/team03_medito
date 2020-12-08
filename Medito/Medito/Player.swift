@@ -15,7 +15,10 @@ class Player{
         avPlayer = AVPlayer()
     }
     
-//    let audios:[String] = ["song","song","song"]
+    var history:[String] = []
+    
+   static  let sharedInstance = Player()
+
     
     func playStream(fileUrl: String){
         let url = NSURL(string: fileUrl)

@@ -21,6 +21,7 @@ class historyTableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        
         self.historyTableView.reloadData()
     }
 
@@ -33,13 +34,13 @@ class historyTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return historyList.count
+        return Player.sharedInstance.history.count
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell:historyTableViewCell = historyTableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! historyTableViewCell
-        cell.historyAudioLbl.text = self.historyList[indexPath.row]
+        cell.historyAudioLbl.text = Player.sharedInstance.history[indexPath.row]
         return cell
     }
     

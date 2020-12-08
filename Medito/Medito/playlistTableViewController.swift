@@ -48,6 +48,7 @@ class playlistTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        Player.sharedInstance.history.append(self.songs[indexPath.row])
         self.performSegue(withIdentifier: "SendDataSegue", sender: self)
     }
     
@@ -57,7 +58,7 @@ class playlistTableViewController: UITableViewController {
             let indexPath = indexPaths[0] as NSIndexPath
             let vc = segue.destination as! ViewController
             vc.image = UIImage(named: self.imgList[indexPath.row])!
-            vc.audioName = self.songs[indexPath.row ]
+            vc.audioName = self.songs[indexPath.row]
 //            vc.textt = self.list[indexPath.row]
         }
     }
