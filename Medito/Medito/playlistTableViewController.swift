@@ -9,9 +9,9 @@ import UIKit
 class playlistTableViewController: UITableViewController {
 
     @IBOutlet var playlist: UITableView!
-    var list = ["Swimming", "Workout", "Meditation", "yoga", "Driving"]
-    var imgList = ["swimming", "Dumbell", "meditation", "yoga", "sunflower"]
-    var songs = ["no", "song1", "song", "years", "box"]
+    var list = ["Swimming", "Workout", "Meditation", "Driving"]
+    var imgList = ["swimming", "Dumbell", "meditation", "sunflower"]
+    var songs = ["Swimming", "Dumbell", "Meditation", "Driving"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -48,7 +48,9 @@ class playlistTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        Player.sharedInstance.avPlayer.pause()
         Player.sharedInstance.history.append(self.songs[indexPath.row])
+        Player.sharedInstance.historyImg.append(self.imgList[indexPath.row])
         self.performSegue(withIdentifier: "SendDataSegue", sender: self)
     }
     
@@ -59,7 +61,6 @@ class playlistTableViewController: UITableViewController {
             let vc = segue.destination as! ViewController
             vc.image = UIImage(named: self.imgList[indexPath.row])!
             vc.audioName = self.songs[indexPath.row]
-//            vc.textt = self.list[indexPath.row]
         }
     }
     

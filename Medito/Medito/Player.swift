@@ -15,6 +15,7 @@ class Player{
         avPlayer = AVPlayer()
     }
     
+    var historyImg:[String] = []
     var history:[String] = []
     
    static  let sharedInstance = Player()

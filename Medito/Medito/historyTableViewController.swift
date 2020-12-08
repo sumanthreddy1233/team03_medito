@@ -40,6 +40,7 @@ class historyTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell:historyTableViewCell = historyTableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! historyTableViewCell
+        cell.historyAudioImg.image = UIImage(named: Player.sharedInstance.historyImg[indexPath.row]) 
         cell.historyAudioLbl.text = Player.sharedInstance.history[indexPath.row]
         return cell
     }
